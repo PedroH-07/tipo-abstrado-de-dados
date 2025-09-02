@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "aluno.h"
+#include "lista.h"
 
 // ex 01 alterar nota
 int main() {
@@ -12,5 +13,22 @@ int main() {
 
     // Altera a nota do aluno para 9.0
     aluno.nota = 9.0;
+
+
+    Lista turma;
+    turma.quantidade = 3;
+    turma.alunos[0] = criarAluno("Ana", 101, 7.5);
+    turma.alunos[1] = criarAluno("Bruno", 102, 8.0);
+    turma.alunos[2] = criarAluno("Carlos", 103, 6.5);
+
+    // Calcula e imprime a média das notas dos alunos da lista
+    float media = calcularMedia(turma);
+    printf("Média das notas: %.2f\n", media);
+
+
+
+
+
+    
 
     // Imprime os dados do aluno após a alteração da nota
