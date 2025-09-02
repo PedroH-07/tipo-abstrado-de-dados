@@ -8,4 +8,17 @@ typedef struct {
     int tamanho;
 } Lista;
 
+#define MAX_ALUNOS 100
+
+typedef struct {
+    Aluno dados[MAX_ALUNOS];
+    int tamanho;
+} Lista;
+
+int removerUltimoAluno(Lista *l);
+void imprimirListaAlunos(Lista l);
+
+int buscarAlunoPorRM(Lista l, int rm);
+
 #endif
+

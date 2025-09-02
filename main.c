@@ -40,4 +40,15 @@ int main() {
     mostrarBuscaAluno(l, 999);
 
     return 0;
+
+// ex 02 remover último aluno
+printf("\nRemovendo o último aluno...\n");
+    if (removerUltimoAluno(&l)) {
+        printf("Remoção bem sucedida!\n");
+    } else {
+        printf("Falha na remoção (lista vazia).\n");
+    }
+    imprimirListaAlunos(l);
+
+    return 0;
 }
