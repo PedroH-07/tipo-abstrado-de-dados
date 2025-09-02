@@ -6,8 +6,8 @@
 #define MAX_ALUNOS 100
 
 typedef struct {
-    Aluno alunos[MAX_ALUNOS];
-    int quantidade;
+    Aluno alunos[MAX_ALUNOS]; // array de alunos
+    int quantidade;           // quantidade de alunos inseridos
 } Lista;
 
 // Inicializa a lista de alunos
